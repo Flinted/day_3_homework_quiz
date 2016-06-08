@@ -1,0 +1,50 @@
+A1.   lines.length/count/size   (5)
+A2.   lines[1]
+A3.   lines.last, lines[4], lines.pop, lines.at(4), lines.drop(4)
+A4.   position 3
+A5.   lines.unshift("Airport")
+A6.   lines << "York Place"
+A7.   lines.delete("Edinburgh Park")
+A8.   lines.delete_at(1)
+A9.   lines.reverse
+A10.  FOR:
+      for stop in lines
+      puts stop
+      end
+
+
+      WHILE:
+      stop = 0
+      while stop < 5
+      puts lines[stop]
+      end
+
+B1.   my_hash[1]
+B2.   my_hash[:two]
+B3.   my_hash["two"]
+B4.   my_hash[3] = "Three"
+B5.   my_hash[:four] = 4
+
+C1.   users["Jonathan"][:twitter]
+C2.   users["Erik"][:home_town]
+C3.   users["Erik"][:favourite_numbers]
+C4.   users["Avril"][:pets]["colin"]
+C5.   users["Erik"][:favourite_numbers].sort.first
+C6.   return_array = []
+      for num in users["Avril"][:favourite_numbers]
+        return_array << num if num.even?
+      end
+      return return_array
+C7.   return_array = users["Jonathan"][:favourite_numbers].sort.uniq
+C8.   users["Erik"][:favourite_numbers] << 7
+C9.   users["Erik"][:home_town] = "Edinburgh"
+C10.  users["Erik"][:pets]["fluffy"] = :dog
+C11.  users["Chris"] =  {
+        :twitter => "none",
+        :favourite_numbers => [52, 25],
+        :home_town => "Edinburgh",
+        :pets => {
+          "Cairo" => :cat,
+          "Lisbon" => :cat
+        }
+      }
